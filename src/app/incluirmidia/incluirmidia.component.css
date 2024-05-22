@@ -1,0 +1,16 @@
+.botaoEnviar{
+  width: 100%;
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #765992;
+  border-color: #765992;
+}
+
+.btn-primary::hov {
+  background-color: #765992 !important;
+}
