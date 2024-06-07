@@ -1,21 +1,43 @@
 <div class="container">
-    <div class="row align-items-center">
-        <div class="col-sm px-md-5">
-            <div class="card" style="width: 18rem;">
-                <img src="\assets\midiafisica1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">"Travel To Space Laika Boss", aquarela sobre canson 180g, 2021.</p>
-                </div>
-            </div>
+  <div class="row align-items-center">
+    <div class="col-sm px-md-5">
+      <div class="card" style="width: 18rem">
+        <img src="\assets\midiafisica1.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            "Travel To Space Laika Boss", aquarela sobre canson 180g, 2021.
+          </p>
         </div>
-        <div class="col-sm px-md-5">
-            <div class="card" style="width: 18rem;">
-                <img src="\assets\midiafisica2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">"I'm Not Sad Anymore", releitura de The Wonder Years, PVA sobre tela (15cm x 21xm), 2021.</p>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="col-sm px-md-5">
+      <div class="card" style="width: 18rem">
+        <img src="\assets\midiafisica2.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            "I'm Not Sad Anymore", releitura de The Wonder Years, PVA sobre tela
+            (15cm x 21xm), 2021.
+          </p>
         </div>
-        <div class="divBotao">
-          <button type="button" class="btn btn-primary" routerLink="/app-incluirmidia">Incluir Arte</button>
+      </div>
+    </div>
+    <div class="divBotao">
+      <button
+        type="button"
+        class="btn btn-primary"
+        routerLink="/app-incluirmidia"
+      >
+        Incluir Arte
+      </button>
+    </div>
+    <div *ngFor="let item of list">
+      <div class="col-sm px-md-5">
+        <div class="card-body">
+          <p class="card-text">
+            {{ item.description }}
+          </p>
         </div>
+      </div>
+    </div>
+  </div>
+</div>

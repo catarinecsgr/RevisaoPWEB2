@@ -11,6 +11,16 @@
   border-color: #765992;
 }
 
-.btn-primary::hov {
-  background-color: #765992 !important;
+.btn-primary:focus,
+.btn-primary:focus {
+  color:#fff;
+  background-color: #765992;
+  border-color: #765992;
+
+}
+
+.btn-primary:hover {
+  color:#fff;
+  background-color: #765992;
+  background-color: #4c395e !important;
 }

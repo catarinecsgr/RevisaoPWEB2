@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-midiafisica',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class midiafisicaComponent implements OnInit {
 
-  constructor() { }
+  public list: any[];
+  constructor(
+    private readonly appComponent: AppComponent,
+  ) {
+    this.list = appComponent.listaMidiaFisica;
+  }
   title = 'Mídia Física';
   ngOnInit(): void {
   }

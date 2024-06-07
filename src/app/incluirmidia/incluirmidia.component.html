@@ -2,7 +2,7 @@
   <div class="input-group-prepend">
     <label class="input-group-text" for="inputGroupSelect01">Opções</label>
   </div>
-  <select class="custom-select" id="inputGroupSelect01">
+  <select class="custom-select" id="inputGroupSelect01" [(ngModel)]="selectType">
     <option selected>Escolher...</option>
     <option value="1">Mídia Física</option>
     <option value="2">Mídia Digital</option>
@@ -20,5 +20,5 @@
     <input type="text" aria-label="descricao" class="form-control">
   </div>
 <div class="botaoEnviar">
-  <button type="button" class="btn btn-primary">Enviar</button>
+  <button type="button" class="btn btn-primary" (click)="addMidia()">Enviar</button>
 </div>

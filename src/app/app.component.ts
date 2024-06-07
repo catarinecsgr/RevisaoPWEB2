@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'revisao';
+
+  public listaMidiaFisica: any[] = [];
+  public listaMidiaDigital: any[] = [];
 }
